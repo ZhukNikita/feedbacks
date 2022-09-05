@@ -1,0 +1,45 @@
+.RatingAutho{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    border-radius: 10px;
+}
+.box {
+    animation: 2s show ease;
+    min-height: 200px ;
+    width: 240px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    word-wrap: break-word;
+}
+.facebook{
+    box-shadow: -1px 4px 5px -3px rgba(0,0,0,0.75);
+    padding: 5px ;
+    width: 180px;
+    height: 43px;
+    margin-bottom:5px;
+    color : white;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    border-radius: 2px;
+    border: none ;
+    background: blue;
+}
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.anonymous{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+.fbIcon{
+    color: blue;
+}

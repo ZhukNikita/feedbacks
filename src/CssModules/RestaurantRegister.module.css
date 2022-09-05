@@ -1,0 +1,54 @@
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(97, 97, 97);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 1px solid rgba(144, 202, 249, 0.46);
+    min-height: 700px;
+    padding: 10px;
+    min-width: 300px;
+}
+.hr{
+    width: 100%;
+    color: lightgray;
+    border: none;
+    border-bottom: 1px solid lightgray
+}
+.messageWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.modal {
+    height: 300px;
+    width: 50%;
+    background-color: white;
+    border-radius: 12px;
+    border : 2px solid rgb(103, 58, 183);
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.modal h3 , h6{
+    text-align: center;
+}
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+        width: 50%;
+    }
+}
