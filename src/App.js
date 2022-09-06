@@ -8,6 +8,7 @@ import AdminRegister from "./components/AdminRegister";
 import RestaurantRegister from "./components/RestaurantRegister";
 import AdminPanel from "./components/AdminPanel";
 import QrCodePage from "./components/QrCodePage";
+import SubscriptionPage from "./components/SubscriptionPage";
 
 function App() {
     const [rating , setRating] = useState(null)
@@ -36,6 +37,9 @@ function App() {
                 </Route>
                 <Route path="/QrPage" element={
                     <QrCodePage text ={QrSrc}/>}>
+                </Route>
+                <Route path="/Subscription" element={
+                    <SubscriptionPage/>}>
                 </Route>
             </Routes>
         </BrowserRouter>
