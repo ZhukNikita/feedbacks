@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 import {Button} from "@mui/material";
 import React from "react";
 
-export default function SmallSubsMessage ({setMessageOn}){
-    return(
-        <div className={admin.SubscriptionFullInfo} onClick={()=>setMessageOn(false)}>
-            <div className={admin.SubscriptionContent} onMouseLeave={()=>setMessageOn(false)}>
+export default function SmallSubsMessage({setMessageOn}) {
+    return (
+        <div className={admin.SubscriptionFullInfo} onClick={() => setMessageOn(false)}>
+            <div className={admin.SubscriptionContent} onMouseLeave={() => setMessageOn(false)}>
                 <div className={admin.SubscriptionHeader}>
-                    <h3 style={{color : 'blue'}}>Pro</h3>
+                    <h3 style={{color: 'blue'}}>Pro</h3>
                     <h5>Самая популярная</h5>
                 </div>
                 <div className={admin.SubscriptionFullInfoBody}>

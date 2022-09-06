@@ -1,11 +1,12 @@
 import React from 'react'
 import zxcvbn from 'zxcvbn'
 
-export default function PasswordStrength({password}){
+export default function PasswordStrength({password}) {
     const result = zxcvbn(password)
     const num = result.score * 100 / 4
-    function StrengthPassLable(){
-        switch (result.score){
+
+    function StrengthPassLable() {
+        switch (result.score) {
             case 0 :
                 return 'Очень простой';
             case 1:
@@ -20,8 +21,9 @@ export default function PasswordStrength({password}){
                 return 'none'
         }
     }
-    function ProgressColor(){
-        switch (result.score){
+
+    function ProgressColor() {
+        switch (result.score) {
             case 0 :
                 return '#828282';
             case 1:
@@ -36,19 +38,26 @@ export default function PasswordStrength({password}){
                 return 'none'
         }
     }
-    const ChangePasswordColor=()=>({
-        transition : 'width 500ms',
+
+    const ChangePasswordColor = () => ({
+        transition: 'width 500ms',
         width: `${num}%`,
         background: ProgressColor(),
         height: '7px',
         borderRadius: '4px',
     })
-    return(
-            <>
-                <div className='progress' style={{ marginTop:'5px', width:'100%', height : '7px' , backgroundColor :'lightgrey' , borderRadius: '4px'}}>
-                    <div className='progress-bar' style={ChangePasswordColor()}></div>
-                </div>
-                <p style={{ color : ProgressColor() }}>{StrengthPassLable()}</p>
-            </>
+    return (
+        <>
+            <div className='progress' style={{
+                marginTop: '5px',
+                width: '100%',
+                height: '7px',
+                backgroundColor: 'lightgrey',
+                borderRadius: '4px'
+            }}>
+                <div className='progress-bar' style={ChangePasswordColor()}></div>
+            </div>
+            <p style={{color: ProgressColor()}}>{StrengthPassLable()}</p>
+        </>
     )
 }

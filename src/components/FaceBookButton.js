@@ -3,9 +3,9 @@ import FacebookAuth from 'react-facebook-auth';
 import autho from "../CssModules/RatingAutho.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-const MyFacebookButton = ({ onClick }) => (
+const MyFacebookButton = ({onClick}) => (
     <button onClick={onClick} className={autho.facebook}>
-        <FacebookIcon style={{marginLeft: '2px',width:'25px' , height:'25px' , color: "white"}}/>
+        <FacebookIcon style={{marginLeft: '2px', width: '25px', height: '25px', color: "white"}}/>
         Sign in with Facebook
     </button>
 );

@@ -1,4 +1,4 @@
-import React, {useState , useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import Logo from "./Logo";
 import admin from '../CssModules/AdminAutho.module.css'
 import {FaceBook} from "./FaceBookButton";
@@ -14,20 +14,20 @@ export default function AdminAutho() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [passwordVis, setPassVis] = useState('password')
-    const [messageOn , setMessageOn] = useState(false)
-    const [emptyPass , setEmptyPass] = useState('')
-    const [emptyInput , setEmptyInput] = useState('')
+    const [messageOn, setMessageOn] = useState(false)
+    const [emptyPass, setEmptyPass] = useState('')
+    const [emptyInput, setEmptyInput] = useState('')
     const handleClose = () => setMessageOn(false);
     const Check = () => {
-        if(!email){
+        if (!email) {
             setEmptyInput(' Email некорректный')
         }
-        if(!password){
+        if (!password) {
             setEmptyPass('Пароль некорректный')
         }
 
     }
-    const style = {width:'100%' , border : '1px solid lightgrey' , borderRadius: '12px' }
+    const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}
     return (
         <div className={admin.body}>
             <Logo/>
@@ -48,13 +48,13 @@ export default function AdminAutho() {
                 type="email"
                 placeholder="someemail@email.com"
                 label="Email Address"
-                defaultValue ="someemail@email.com"
+                defaultValue="someemail@email.com"
                 inputProps={{
-                    maxLength:'30',
+                    maxLength: '30',
                 }}
 
             />
-            <h5 style={{width:'100%' , color:"red"}}>{emptyInput}</h5>
+            <h5 style={{width: '100%', color: "red"}}>{emptyInput}</h5>
             <CssTextField
                 onChange={e => setPassword(e.target.value)}
                 style={style}
@@ -65,31 +65,32 @@ export default function AdminAutho() {
                 label="Password"
                 margin='normal'
                 inputProps={{
-                    maxLength:'30',
+                    maxLength: '30',
                 }}
                 InputProps={{
                     endAdornment:
                         passwordVis === 'password'
                             ?
-                            <RemoveRedEyeIcon style={{cursor:'pointer'}} onClick={()=>setPassVis('text')}/>
+                            <RemoveRedEyeIcon style={{cursor: 'pointer'}} onClick={() => setPassVis('text')}/>
                             :
-                            <VisibilityOffIcon style={{cursor:'pointer'}} onClick={()=>setPassVis('password')}/>}}
+                            <VisibilityOffIcon style={{cursor: 'pointer'}} onClick={() => setPassVis('password')}/>
+                }}
             />
-            <h5 style={{margin:'0',width:'100%' , color:"red"}}>{emptyPass}</h5>
-                <Link to='/ForgotPassword'>
-                    Забыли пароль?
-                </Link>
+            <h5 style={{margin: '0', width: '100%', color: "red"}}>{emptyPass}</h5>
+            <Link to='/ForgotPassword'>
+                Забыли пароль?
+            </Link>
             {email === '' || password === '' ?
                 <Link to='#'>
                     <Button
                         onClick={Check}
                         variant="outlined"
                         style={{
-                        margin: '10px',
-                        borderRadius: '4px',
-                        borderColor: 'rgb(103, 58, 183)',
-                        color: 'rgb(103, 58, 183)'
-                    }}>Отправить</Button>
+                            margin: '10px',
+                            borderRadius: '4px',
+                            borderColor: 'rgb(103, 58, 183)',
+                            color: 'rgb(103, 58, 183)'
+                        }}>Отправить</Button>
                 </Link>
                 :
                 <Link to='/AdminPanel'>
@@ -103,7 +104,9 @@ export default function AdminAutho() {
             <Link to='/AdminRegister'>
                 Зарегистрироваться?
             </Link>
-            <h4 className={admin.info} onClick={()=> {setMessageOn(!messageOn)}}>Условия использования</h4>
+            <h4 className={admin.info} onClick={() => {
+                setMessageOn(!messageOn)
+            }}>Условия использования</h4>
             {
                 messageOn && (
                     <div className={admin.messageWrapper} onClick={handleClose}>

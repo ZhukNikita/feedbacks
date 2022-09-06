@@ -1,4 +1,4 @@
-.body{
+.body {
     display: block;
     color: black;
     font-size: 0.875rem;
@@ -11,16 +11,19 @@
     min-height: 100%;
     min-width: 45%;
 }
-.title{
+
+.title {
     color: rgb(103, 58, 183);
     margin: 10px;
 }
-.Video{
+
+.Video {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Subscription{
+
+.Subscription {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,12 +35,14 @@
     float: right;
     background-color: rgb(103, 58, 183);
 }
-.SubscriptionInfo{
+
+.SubscriptionInfo {
     margin-left: 8px;
     margin-top: 3px;
     height: 18px;
     width: 18px;
 }
+
 .raz .SubscriptionFullInfo {
     position: fixed;
     z-index: 1;
@@ -52,7 +57,8 @@
     display: flex;
     justify-content: right;
 }
-.SubscriptionContent{
+
+.SubscriptionContent {
     margin-top: 5%;
     margin-right: 15%;
     border-radius: 10px;
@@ -60,46 +66,53 @@
     height: 16%;
     background-color: white;
 }
-.content{
+
+.content {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .marker {
     margin: 6px;
     height: 9px;
     width: 9px;
     border-radius: 4px;
 }
-.Logo{
+
+.Logo {
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.SubscriptionHeader{
+
+.SubscriptionHeader {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50px ;
+    height: 50px;
     background-color: lightgray;
     width: 100%;
 }
-.SubscriptionFullInfoBody{
+
+.SubscriptionFullInfoBody {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .SubscriptionFullInfoBody h3 {
     font-weight: bold;
     margin-top: 10px;
 }
+
 .SubscriptionFullInfoBody a button {
     height: 30px;
     font-size: 10px;
@@ -107,7 +120,8 @@
     border-radius: 6px;
     background-color: rgb(103, 58, 183);
 }
-.feedbackTitle{
+
+.feedbackTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,25 +130,28 @@
     width: 80%;
     background-color: rgb(209, 233, 252);
     height: 60px;
-    box-shadow: 1px 2px 3px 0.2px rgba(0,0,0,0.33);
+    box-shadow: 1px 2px 3px 0.2px rgba(0, 0, 0, 0.33);
 }
 
 .SubscriptionFullInfoBody span {
     color: gray;
 }
-.feedbacksList{
+
+.feedbacksList {
     color: rgb(122, 12, 46);
-    margin-top: 15px ;
+    margin-top: 15px;
     margin-bottom: 30px;
     border-radius: 12px;
     width: 80%;
     min-height: 200px;
     background-color: rgb(255, 231, 217)
 }
-.feedbacksList{
-    box-shadow: 0px 2px 3px 0.3px rgba(0,0,0,0.33);
+
+.feedbacksList {
+    box-shadow: 0px 2px 3px 0.3px rgba(0, 0, 0, 0.33);
 }
-.feedbacksListFooter{
+
+.feedbacksListFooter {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -145,36 +162,42 @@
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
 }
-.feedbacksListFooter a{
+
+.feedbacksListFooter a {
     margin-right: 20px;
     margin-bottom: 18px;
     color: rgb(122, 12, 46);
     height: 0;
 }
 
-.feedbacksListContent{
+.feedbacksListContent {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     min-height: 200px;
 }
+
 @media screen and (max-width: 500px) {
-    iframe{
+    iframe {
         width: 90%;
     }
-    .body{
+
+    .body {
         min-height: 700px;
         min-width: 300px;
     }
-    .body h2{
+
+    .body h2 {
         color: rgb(122, 12, 46);
         font-size: 18px;
     }
-    .body h3{
+
+    .body h3 {
         font-size: 15px;
     }
-    .SubscriptionContent{
+
+    .SubscriptionContent {
         width: 40%;
         height: 25%;
         margin-top: 10%;

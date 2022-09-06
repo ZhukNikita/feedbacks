@@ -1,6 +1,6 @@
 import QrCode from 'qrcode';
 import qr from '../CssModules/QrCodePage.module.css'
-import React, {useState , useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import {Button} from "@mui/material";
 import ReplyIcon from '@mui/icons-material/Reply';
 import PrintIcon from '@mui/icons-material/Print';
@@ -9,22 +9,22 @@ import SubscriptionMessage from "./SubscriptionMessage";
 import {AspectRatio} from "@mui/joy";
 import {Link} from "react-router-dom";
 
-export default function QrCodePage({text}){
-    const [src , SetSrc] =useState('');
-    const [messageOn , setMessageOn] = useState(false);
-    const handleOpen = ()=>{
+export default function QrCodePage({text}) {
+    const [src, SetSrc] = useState('');
+    const [messageOn, setMessageOn] = useState(false);
+    const handleOpen = () => {
         setMessageOn(true)
     }
-    const handleClose = ()=>{
+    const handleClose = () => {
         setMessageOn(false)
     }
     useEffect(() => {
-            QrCode.toDataURL(text).then((data)=> {
+        QrCode.toDataURL(text).then((data) => {
             SetSrc(data)
         })
     }, []);
-    
-    return(
+
+    return (
         <div className={qr.body}>
             <h2>QR сгенерирован</h2>
             <div className={qr.QrCode}>
@@ -39,7 +39,7 @@ export default function QrCodePage({text}){
                         borderRadius: '8px',
                         backgroundColor: 'rgb(103, 58, 183)'
                     }}
-                    onClick={()=>handleOpen()}
+                    onClick={() => handleOpen()}
                 ><PrintIcon/>
                 </Button>
                 <Button variant="contained" style={{
@@ -56,9 +56,9 @@ export default function QrCodePage({text}){
                 </Button>
             </div>
             <h2>Как пользоваться:</h2>
-            <div className={qr.Video} style={{width:'100%'}}>
+            <div className={qr.Video} style={{width: '100%'}}>
                 <iframe
-                    style={{borderRadius:'12px'}}
+                    style={{borderRadius: '12px'}}
                     width="380px" height="210px" src="https://www.youtube.com/embed/D7SlK16o82o"
                     title="YouTube video player" frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -87,7 +87,7 @@ export default function QrCodePage({text}){
                     margin: '10px',
                     borderRadius: '8px',
                     backgroundColor: 'rgb(209, 233, 252)',
-                    color:'rgb(17,46,147)',
+                    color: 'rgb(17,46,147)',
                     fontWeight: 'bold',
                     '&:hover': {
                         background: `rgb(124, 173, 213)`,

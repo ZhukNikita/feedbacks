@@ -10,23 +10,39 @@
     background-color: rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
+
 .modal {
     height: 300px;
     width: 500px;
     background-color: white;
     border-radius: 12px;
-    border : 2px solid rgb(103, 58, 183);
+    border: 2px solid rgb(103, 58, 183);
     animation-duration: 2s;
     animation-name: slidein;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.modal h3{
+.modal h3 {
     font-size: 20px;
+    margin: 30px;
+    color: black;
 }
+
+.title h4 {
+    font-size: 17px;
+    color: black;
+}
+
 @keyframes slidein {
     from {
         margin-top: 100%;

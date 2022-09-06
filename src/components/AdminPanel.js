@@ -1,4 +1,4 @@
-import React, {useState , useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import admin from '../CssModules/AdminPanel.module.css'
 import Logo from "./Logo";
 import {Button, ButtonGroup} from "@mui/material";
@@ -10,7 +10,7 @@ import SmallSubsMessage from "./SmallSubsMessage";
 
 
 export default function AdminPanel() {
-    const[messageOn , setMessageOn] = useState(false)
+    const [messageOn, setMessageOn] = useState(false)
 
     return (
         <div className={admin.body}>
@@ -18,10 +18,11 @@ export default function AdminPanel() {
             <div className={admin.Subscription}>
                 <h5>14 дней</h5>
                 <div className={admin.raz}>
-                    <InfoIcon className={admin.SubscriptionInfo} style={{height: '18px',width: '18px'}} onMouseOver={()=>setMessageOn(true)}/>
+                    <InfoIcon className={admin.SubscriptionInfo} style={{height: '18px', width: '18px'}}
+                              onMouseOver={() => setMessageOn(true)}/>
                     {
-                        messageOn &&(
-                            <SmallSubsMessage setMessageOn = {setMessageOn}/>
+                        messageOn && (
+                            <SmallSubsMessage setMessageOn={setMessageOn}/>
                         )
                     }
                 </div>
@@ -34,15 +35,15 @@ export default function AdminPanel() {
                     <h2>Как пользоваться:</h2>
                 </div>
                 <div className={admin.Video}>
-                        <iframe
-                            width="370"
-                            height="200"
-                            style={{borderRadius:'12px'}}
-                            src="https://www.youtube.com/embed/RK1K2bCg4J8"
-                            title="YouTube video player" frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen>
-                        </iframe>
+                    <iframe
+                        width="370"
+                        height="200"
+                        style={{borderRadius: '12px'}}
+                        src="https://www.youtube.com/embed/RK1K2bCg4J8"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+                    </iframe>
                 </div>
                 <Link to='/QrPage'>
                     <Button variant="contained" style={{
@@ -59,7 +60,7 @@ export default function AdminPanel() {
                     </div>
                     <div className={admin.feedbacksListFooter}>
                         <Link to='/Feedbacks'>
-                            <h4>Посмотреть все <ArrowForwardIosIcon style={{width: '10px', height:'10px'}}/></h4>
+                            <h4>Посмотреть все <ArrowForwardIosIcon style={{width: '10px', height: '10px'}}/></h4>
                         </Link>
                     </div>
                 </div>

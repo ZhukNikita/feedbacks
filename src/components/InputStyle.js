@@ -6,16 +6,16 @@ export const CssTextField = withStyles({
         color: 'black',
         '& label.Mui-focused': {
             color: 'blue',
-            background:'white',
+            background: 'white',
         },
-        '& label':{
-            background:'white',
+        '& label': {
+            background: 'white',
         },
         '& .MuiOutlinedInput-root': {
-            '& input':{
+            '& input': {
                 borderRadius: '12px',
-                zIndex:'0',
-                width:'100%'
+                zIndex: '0',
+                width: '100%'
             },
             '&.Mui-focused input': {
                 color: 'black',
@@ -35,15 +35,15 @@ export const NameTextField = withStyles({
             color: 'blue',
             backgroundColor: 'white',
         },
-        '& label':{
+        '& label': {
             backgroundColor: 'white',
         },
         '& .MuiOutlinedInput-root': {
-            '& input':{
+            '& input': {
                 border: '1px solid lightgrey',
                 borderRadius: '12px',
                 width: '100%',
-                zIndex:'0',
+                zIndex: '0',
             },
             '&.Mui-focused input': {
                 color: 'black',
