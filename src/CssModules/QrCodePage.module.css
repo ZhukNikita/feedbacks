@@ -1,0 +1,15 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 1px solid rgba(144, 202, 249, 0.46);
+    min-height: 400px;
+    min-width: 45%;
+}

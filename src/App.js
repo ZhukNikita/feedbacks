@@ -6,9 +6,12 @@ import RatingAutho from "./components/RatingAutho";
 import AdminAutho from "./components/AdminAutho";
 import AdminRegister from "./components/AdminRegister";
 import RestaurantRegister from "./components/RestaurantRegister";
+import AdminPanel from "./components/AdminPanel";
+import QrCodePage from "./components/QrCodePage";
 
 function App() {
     const [rating , setRating] = useState(null)
+    const [QrSrc , setQrSrc] = useState('http://localhost:3000')
   return (
     <div className="App">
         <BrowserRouter>
@@ -27,6 +30,12 @@ function App() {
                 </Route>
                 <Route path="/RestaurantRegister" element={
                     <RestaurantRegister/>}>
+                </Route>
+                <Route path="/AdminPanel" element={
+                    <AdminPanel/>}>
+                </Route>
+                <Route path="/QrPage" element={
+                    <QrCodePage text ={QrSrc}/>}>
                 </Route>
             </Routes>
         </BrowserRouter>
