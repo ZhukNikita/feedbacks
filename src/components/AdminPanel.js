@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 import InfoIcon from '@mui/icons-material/Info';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import FeedbacksList from "./FeedbacksList";
+import SmallSubsMessage from "./SmallSubsMessage";
 
 
 export default function AdminPanel() {
@@ -20,34 +21,19 @@ export default function AdminPanel() {
                     <InfoIcon className={admin.SubscriptionInfo} style={{height: '18px',width: '18px'}} onMouseOver={()=>setMessageOn(true)}/>
                     {
                         messageOn &&(
-                            <div className={admin.SubscriptionFullInfo} onClick={()=>setMessageOn(false)}>
-                                <div className={admin.SubscriptionContent} onMouseLeave={()=>setMessageOn(false)}>
-                                    <div className={admin.SubscriptionHeader}>
-                                        <h3 style={{color : 'blue'}}>Pro</h3>
-                                        <h5>Самая популярная</h5>
-                                    </div>
-                                    <div className={admin.SubscriptionFullInfoBody}>
-                                        <h3>$15<span>/m</span></h3>
-                                        <h5>Включает в себя</h5>
-                                        <Link to='/Subscription'>
-                                            <Button variant="contained" style={{
-                                                backgroundColor: 'rgb(103, 58, 183)'
-                                            }}>Изменить</Button>
-                                        </Link>
-                                    </div>
-                                </div>
-
-                            </div>)
+                            <SmallSubsMessage setMessageOn = {setMessageOn}/>
+                        )
                     }
-
                 </div>
 
             </div>
             <br/>
             <br/>
             <div className={admin.content}>
-                <h2>Как пользоваться:</h2>
-                <div>
+                <div className={admin.title}>
+                    <h2>Как пользоваться:</h2>
+                </div>
+                <div className={admin.Video}>
                         <iframe
                             width="370"
                             height="200"

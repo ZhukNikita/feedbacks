@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: black;
     font-size: 0.875rem;
     font-weight: 400;
@@ -12,4 +13,31 @@
     border: 1px solid rgba(144, 202, 249, 0.46);
     min-height: 400px;
     min-width: 45%;
+}
+.buttons{
+
+}
+.body h2 {
+    margin: 20px;
+}
+.QrCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(255, 231, 217);
+    border-radius: 12px;
+}
+.Video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (max-width: 500px){
+    iframe{
+        width: 70%;
+        height: 100%;
+    }
+
 }

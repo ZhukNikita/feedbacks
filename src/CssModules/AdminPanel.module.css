@@ -11,6 +11,15 @@
     min-height: 100%;
     min-width: 45%;
 }
+.title{
+    color: rgb(103, 58, 183);
+    margin: 10px;
+}
+.Video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Subscription{
     display: flex;
     justify-content: center;
@@ -44,11 +53,11 @@
     justify-content: right;
 }
 .SubscriptionContent{
-    margin-top: 8%;
-    margin-right: 14%;
+    margin-top: 5%;
+    margin-right: 15%;
     border-radius: 10px;
-    width: 12%;
-    height: 15%;
+    width: 11%;
+    height: 16%;
     background-color: white;
 }
 .content{
@@ -57,10 +66,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.content h2{
-    color: rgb(103, 58, 183);
-    margin: 10px;
 }
 .marker {
     margin: 6px;
@@ -155,13 +160,23 @@
     min-height: 200px;
 }
 @media screen and (max-width: 500px) {
+    iframe{
+        width: 90%;
+    }
     .body{
         min-height: 700px;
         min-width: 300px;
     }
+    .body h2{
+        color: rgb(122, 12, 46);
+        font-size: 18px;
+    }
+    .body h3{
+        font-size: 15px;
+    }
     .SubscriptionContent{
         width: 40%;
-        height: 20%;
+        height: 25%;
         margin-top: 10%;
         margin-right: 30%;
     }

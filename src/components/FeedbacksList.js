@@ -38,8 +38,16 @@ export default function FeedbacksList(){
         rate: 1,
         UserName: 'Sandra',
         text:'not so good',
-        status:'Решенный',
+        status:'Не решено',
         date: now
+        }
+        ,{
+            id: Math.random(1000),
+            rate: 5,
+            UserName: 'Stacy',
+            text:'Excellent service',
+            status:'Решенный',
+            date: now
         }]
     return (
         <div className={css.body}>
@@ -57,9 +65,10 @@ export default function FeedbacksList(){
                                     />
                                     <div className={css.status}
                                          style={
-                                        feedback.status == 'Активный'?{ backgroundColor:'lightblue'}
+                                        feedback.status == 'Активный'?{ backgroundColor: 'rgb(208, 242, 255' , color:'rgb(4, 41, 122)'}
                                             : feedback.status == 'В обработке'?
-                                            { backgroundColor:'grey'}: {backgroundColor:'lightgreen'}  }
+                                            { backgroundColor:'grey'}: feedback.status == 'Не решено' ?{backgroundColor: 'rgba(255, 72, 66, 0.16)' , color:'rgb(183, 33, 54)'}:
+                                                    {backgroundColor: 'rgba(84, 214, 44, 0.16)' , color:'rgb(34, 154, 22)'} }
                                     >
                                         <span>{feedback.status}</span>
                                     </div>
@@ -67,7 +76,7 @@ export default function FeedbacksList(){
                                 </div>
                                 <h2>{feedback.UserName}</h2>
                                 <h3>{feedback.text}</h3>
-                                <h3 style={{textAlign:'right' , margin: '10px'}}>{feedback.date}</h3>
+                                <h3 style={{textAlign:'right' , color:'lightgray' , margin: '10px'}}>{feedback.date}</h3>
                             </div>
                         </li>
                     )
