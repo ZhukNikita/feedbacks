@@ -1,6 +1,6 @@
 import React from 'react';
 import FacebookAuth from 'react-facebook-auth';
-import autho from "../CssModules/RatingAutho.module.css";
+import autho from "../../CssModules/RatingAutho.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
 const MyFacebookButton = ({onClick}) => (

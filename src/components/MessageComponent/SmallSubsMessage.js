@@ -1,4 +1,4 @@
-import admin from "../CssModules/AdminPanel.module.css";
+import admin from "../AdminComponents/AdminPanel.module.css";
 import {Link} from "react-router-dom";
 import {Button} from "@mui/material";
 import React from "react";

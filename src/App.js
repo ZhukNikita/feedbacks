@@ -3,12 +3,13 @@ import React , {useState} from "react";
 import RatingPage from "./components/RatingPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import RatingAutho from "./components/RatingAutho";
-import AdminAutho from "./components/AdminAutho";
-import AdminRegister from "./components/AdminRegister";
+import AdminAutho from "./components/AdminComponents/AdminAutho";
+import AdminRegister from "./components/AdminComponents/AdminRegister";
 import RestaurantRegister from "./components/RestaurantRegister";
-import AdminPanel from "./components/AdminPanel";
+import AdminPanel from "./components/AdminComponents/AdminPanel";
 import QrCodePage from "./components/QrCodePage";
-import SubscriptionPage from "./components/SubscriptionPage";
+import SubscriptionPage from "./components/SubscriptionComponent/SubscriptionPage";
+import FeedbacksPage from "./components/FeedbacksComponent/FeedbacksPage";
 
 function App() {
     const [rating , setRating] = useState(null)
@@ -40,6 +41,9 @@ function App() {
                 </Route>
                 <Route path="/Subscription" element={
                     <SubscriptionPage/>}>
+                </Route>
+                <Route path="/Feedbacks" element={
+                    <FeedbacksPage/>}>
                 </Route>
             </Routes>
         </BrowserRouter>

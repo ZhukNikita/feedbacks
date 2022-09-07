@@ -1,4 +1,4 @@
-import message from "../CssModules/SubscriptionMessage.module.css";
+import message from "../SubscriptionComponent/SubscriptionMessage.module.css";
 import React from "react";
 import {Button} from "@mui/material";
 

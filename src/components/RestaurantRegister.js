@@ -5,7 +5,8 @@ import {CssTextField} from "./InputStyle";
 import useMask from "react-mask-hook";
 import {Button, Checkbox, FormControl, FormControlLabel, InputLabel, MenuItem, Select} from "@mui/material";
 import {Link} from "react-router-dom";
-import admin from "../CssModules/AdminAutho.module.css";
+import admin from "./AdminComponents/AdminAutho.module.css";
+import TermsMessage from "./MessageComponent/TermsMessage";
 
 
 export default function RestaurantRegister() {
@@ -51,125 +52,121 @@ export default function RestaurantRegister() {
     })
     const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}
     return (
-        <div className={restaurant.body}>
-            <Logo/>
-            <h2 style={{color: 'rgb(103, 58, 183)'}}>Регистрация:</h2>
-            <CssTextField
-                style={style}
-                name="telephone"
-                label='Номер телефона'
-                type="tel"
-                {...maskProps}
-                inputProps={{
-                    maxLength: '30',
-                }}
-            />
-            {emptyTelNumber}
-            <CssTextField
-                onChange={e => setCity(e.target.value)}
-                style={style}
-                name="city"
-                type="text"
-                placeholder="Город"
-                label="Город"
-                inputProps={{
-                    maxLength: '30',
-                }}
-            />
-            {emptyCity}
-            <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">Тип заведения</InputLabel>
-                <Select
-                    onChange={e => setRestaurantType(e.target.value)}
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    label="Тип заведения"
-                    value={restaurantType}
-                >
-                    <MenuItem value="Restaurant">Ресторан</MenuItem>
-                    <MenuItem value='Cafe'>Кафе</MenuItem>
-                    <MenuItem value='Beauty saloon'>Салон красоты</MenuItem>
-                </Select>
-            </FormControl>
-            <CssTextField
-                onChange={e => setRestaurantName(e.target.value)}
-                style={style}
-                name="name"
-                type="text"
-                placeholder="Название заведения"
-                label="Название заведения"
-                inputProps={{
-                    maxLength: '30',
-                }}
-            />
-            {emptyRestaurantName}
-            <CssTextField
-                onChange={e => setAddress(e.target.value)}
-                style={style}
-                name="address"
-                type="text"
-                placeholder="Адрес заведения"
-                label="Адрес заведения"
-                inputProps={{
-                    maxLength: '30',
-                }}
-            />
-            {emptyAddress}
-            <CssTextField
-                onChange={e => setJob(e.target.value)}
-                style={style}
-                name="job"
-                type="text"
-                placeholder="Ваша должность"
-                label="Ваша должность"
-                inputProps={{
-                    maxLength: '30',
-                }}
-            />
-            {emptyJob}
-            <FormControlLabel
-                style={{width: '100%'}}
-                control={<Checkbox onClick={() => setAgreeTerms(!agreeTerms)}
-                                   style={{color: 'rgb(103, 58, 183)'}} defaultChecked/>}
-                label="Я согласен с уловиями пользования"
-            />
-            {city === '' || value === '' || restaurantName === '' || restaurantType === '' || agreeTerms !== true || address === '' || job === '' ?
-                <Link to='#'>
-                    <Button
-                        onClick={Check}
-                        variant="outlined"
-                        style={{
+        <div style={{width:'100%' , height:'100%' , display:'flex' , justifyContent:'center', alignItems:'center'}}>
+            <div className={restaurant.body}>
+                <Logo/>
+                <h2 style={{color: 'rgb(103, 58, 183)'}}>Регистрация:</h2>
+                <CssTextField
+                    style={style}
+                    name="telephone"
+                    label='Номер телефона'
+                    type="tel"
+                    {...maskProps}
+                    inputProps={{
+                        maxLength: '30',
+                    }}
+                />
+                {emptyTelNumber}
+                <CssTextField
+                    onChange={e => setCity(e.target.value)}
+                    style={style}
+                    name="city"
+                    type="text"
+                    placeholder="Город"
+                    label="Город"
+                    inputProps={{
+                        maxLength: '30',
+                    }}
+                />
+                {emptyCity}
+                <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">Тип заведения</InputLabel>
+                    <Select
+                        onChange={e => setRestaurantType(e.target.value)}
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        label="Тип заведения"
+                        value={restaurantType}
+                    >
+                        <MenuItem value="Restaurant">Ресторан</MenuItem>
+                        <MenuItem value='Cafe'>Кафе</MenuItem>
+                        <MenuItem value='Beauty saloon'>Салон красоты</MenuItem>
+                    </Select>
+                </FormControl>
+                <CssTextField
+                    onChange={e => setRestaurantName(e.target.value)}
+                    style={style}
+                    name="name"
+                    type="text"
+                    placeholder="Название заведения"
+                    label="Название заведения"
+                    inputProps={{
+                        maxLength: '30',
+                    }}
+                />
+                {emptyRestaurantName}
+                <CssTextField
+                    onChange={e => setAddress(e.target.value)}
+                    style={style}
+                    name="address"
+                    type="text"
+                    placeholder="Адрес заведения"
+                    label="Адрес заведения"
+                    inputProps={{
+                        maxLength: '30',
+                    }}
+                />
+                {emptyAddress}
+                <CssTextField
+                    onChange={e => setJob(e.target.value)}
+                    style={style}
+                    name="job"
+                    type="text"
+                    placeholder="Ваша должность"
+                    label="Ваша должность"
+                    inputProps={{
+                        maxLength: '30',
+                    }}
+                />
+                {emptyJob}
+                <FormControlLabel
+                    style={{width: '100%'}}
+                    control={<Checkbox onClick={() => setAgreeTerms(!agreeTerms)}
+                                       style={{color: 'rgb(103, 58, 183)'}} defaultChecked/>}
+                    label="Я согласен с уловиями пользования"
+                />
+                {city === '' || value === '' || restaurantName === '' || restaurantType === '' || agreeTerms !== true || address === '' || job === '' ?
+                    <Link to='#'>
+                        <Button
+                            onClick={Check}
+                            variant="outlined"
+                            style={{
+                                margin: '10px',
+                                borderRadius: '4px',
+                                borderColor: 'rgb(103, 58, 183)',
+                                color: 'rgb(103, 58, 183)'
+                            }}>Следующий шаг</Button>
+                    </Link>
+                    :
+                    <Link to='/Next'>
+                        <Button variant="contained" style={{
                             margin: '10px',
                             borderRadius: '4px',
-                            borderColor: 'rgb(103, 58, 183)',
-                            color: 'rgb(103, 58, 183)'
+                            backgroundColor: 'rgb(103, 58, 183)'
                         }}>Следующий шаг</Button>
-                </Link>
-                :
-                <Link to='/Next'>
-                    <Button variant="contained" style={{
-                        margin: '10px',
-                        borderRadius: '4px',
-                        backgroundColor: 'rgb(103, 58, 183)'
-                    }}>Следующий шаг</Button>
-                </Link>
-            }
-            <hr className={restaurant.hr}/>
-            <Link to='/AdminAutho'>Уже есть аккаунт?</Link>
-            <h4 className={admin.info} onClick={() => {
-                setMessageOn(!messageOn)
-            }}>Условия использования</h4>
-            {
-                messageOn && (
-                    <div className={restaurant.messageWrapper} onClick={handleClose}>
-                        <div className={restaurant.modal}>
-                            <h3>text</h3>
-                            <h6>{/*main Text*/}</h6>
-                        </div>
-
-                    </div>
-                )
-            }
+                    </Link>
+                }
+                <hr className={restaurant.hr}/>
+                <Link to='/AdminAutho'>Уже есть аккаунт?</Link>
+                <h4 className={admin.info} onClick={() => {
+                    setMessageOn(!messageOn)
+                }}>Условия использования</h4>
+                {
+                    messageOn && (
+                        <TermsMessage handleClose={handleClose}/>
+                    )
+                }
+            </div>
         </div>
     )
 }

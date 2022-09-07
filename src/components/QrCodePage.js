@@ -5,7 +5,7 @@ import {Button} from "@mui/material";
 import ReplyIcon from '@mui/icons-material/Reply';
 import PrintIcon from '@mui/icons-material/Print';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
-import SubscriptionMessage from "./SubscriptionMessage";
+import SubscriptionMessage from "./MessageComponent/SubscriptionMessage";
 import {AspectRatio} from "@mui/joy";
 import {Link} from "react-router-dom";
 

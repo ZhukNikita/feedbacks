@@ -1,18 +1,17 @@
-import subs from '../CssModules/SubscriptionPage.module.css';
-import SubsTable from "./SubsTable";
-import React from "react";
-import {SubsBuyButton} from "./SubsBuyButton";
 import {Button} from "@mui/material";
-import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import DiamondIcon from '@mui/icons-material/Diamond';
-import HelpCenterIcon from '@mui/icons-material/HelpCenter';
-import SettingsIcon from '@mui/icons-material/Settings';
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import DiamondIcon from "@mui/icons-material/Diamond";
+import HelpCenterIcon from "@mui/icons-material/HelpCenter";
+import SettingsIcon from "@mui/icons-material/Settings";
+import React from "react";
+import bar from "../CssModules/NavBar.module.css";
+import {Link} from "react-router-dom";
 
-export default function SubscriptionPage() {
-    return (
-        <div className={subs.Page}>
-            <div className={subs.NavBar}>
+export default function NavBar(){
+    return(
+        <div className={bar.NavBar}>
+            <Link to='/AboutUs'>
                 <Button
                     startIcon={<EmojiPeopleIcon/>}
                     sx={() => ({
@@ -31,6 +30,8 @@ export default function SubscriptionPage() {
                     variant="outlined">
                     О нас
                 </Button>
+            </Link>
+            <Link to='/Subscription'>
                 <Button
                     startIcon={<AttachMoneyIcon/>}
                     sx={() => ({
@@ -49,6 +50,8 @@ export default function SubscriptionPage() {
                     variant="outlined">
                     Тарифы
                 </Button>
+            </Link>
+            <Link to='/ProFunction'>
                 <Button
                     startIcon={<DiamondIcon/>}
                     sx={() => ({
@@ -67,6 +70,8 @@ export default function SubscriptionPage() {
                     variant="outlined">
                     Функции Pro
                 </Button>
+            </Link>
+            <Link to='/Questions'>
                 <Button
                     startIcon={<HelpCenterIcon/>}
                     sx={() => ({
@@ -85,6 +90,8 @@ export default function SubscriptionPage() {
                     variant="outlined">
                     Вопросы/Ответы
                 </Button>
+            </Link>
+            <Link to='/Settings'>
                 <Button
                     startIcon={<SettingsIcon/>}
                     sx={() => ({
@@ -103,22 +110,7 @@ export default function SubscriptionPage() {
                     variant="outlined">
                     Настройки
                 </Button>
-            </div>
-            <div className={subs.body}>
-                <div className={subs.SubsTable}>
-                    <h2>Тарифы:</h2>
-                </div>
-                <div>
-                    <SubsTable/>
-                </div>
-                <hr/>
-                <div className={subs.SubsButtons}>
-                    <SubsBuyButton onClick={() => console.log('buy 1')}/>
-                    <SubsBuyButton onClick={() => console.log('buy 2')}/>
-                    <SubsBuyButton onClick={() => console.log('buy 3')}/>
-                </div>
-
-            </div>
+            </Link>
         </div>
     )
 }
