@@ -153,7 +153,7 @@ export default function RestaurantRegister() {
                             }}>Следующий шаг</Button>
                     </Link>
                     :
-                    <Link to='/Next'>
+                    <Link to='/AdminPanel'>
                         <Button variant="contained" style={{
                             margin: '10px',
                             borderRadius: '4px',
@@ -162,7 +162,7 @@ export default function RestaurantRegister() {
                     </Link>
                 }
                 <hr className={restaurant.hr}/>
-                <Link to='/AdminAutho'>Уже есть аккаунт?</Link>
+                <Link to='/'>Уже есть аккаунт?</Link>
                 <h4 className={admin.info} onClick={() => {
                     setMessageOn(!messageOn)
                 }}>Условия использования</h4>

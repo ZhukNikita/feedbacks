@@ -20,13 +20,13 @@ function App() {
     <div className="App">
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={
+                <Route path="/Rating" element={
                     <RatingPage rating = {rating} setRating ={setRating}/>}>
                 </Route>
                 <Route path="/RatingAutho" element={
                     <RatingAutho rating = {rating} setRating ={setRating}/>}>
                 </Route>
-                <Route path="/adminAutho" element={
+                <Route path="/" element={
                     <AdminAutho/>}>
                 </Route>
                 <Route path="/AdminRegister" element={
