@@ -5,6 +5,8 @@
     align-items: center;
     min-height: 300px;
     border-radius: 10px;
+    background-color: white;
+    padding: 15px;
 }
 .box {
     animation: 2s show ease;
@@ -40,6 +42,17 @@
     align-items: center;
     flex-direction: row;
 }
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .fbIcon{
-    color: blue;
+    font-size: 13px;
+    color: white;
+    height: 100%;
+    border-radius: 7px;
+    background-color: blue;
+    margin: 15px;
+    padding: 10px;
 }

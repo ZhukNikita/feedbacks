@@ -28,6 +28,7 @@ export default function FeedbacksPage(){
                 <NavBar/>
                 <div className={feed.body}>
                     <FeedbacksPageHeader
+
                         setSearch={setSearch}
                         sort={sort}
                         sortChange={sortChange}

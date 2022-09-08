@@ -77,6 +77,11 @@ export default function RestaurantRegister() {
                     inputProps={{
                         maxLength: '30',
                     }}
+                    InputProps={{
+                        style:{
+                            border: 'none'
+                        }
+                    }}
                 />
                 {emptyCity}
                 <FormControl fullWidth>

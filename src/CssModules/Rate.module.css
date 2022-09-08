@@ -1,9 +1,21 @@
-.Rating{
-    margin-top: 20px ;
+.body{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 1px solid rgba(144, 202, 249, 0.46);
+    min-height: 350px;
+    padding: 10px;
+    min-width: 300px;
+}
+.body h3{
+    color : rgb(3, 114, 183);
 }
 a{
     height: 100%;

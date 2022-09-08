@@ -58,3 +58,29 @@
     background-color: rgb(194, 211, 253);
     font-size: 14px;
 }
+@media screen and (max-width: 500px) {
+    .SubsTable{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .body{
+        width: 100%;
+        min-width: 380px;
+    }
+
+    .body h2 {
+        color: rgb(122, 12, 46);
+        font-size: 18px;
+    }
+
+    .body h3 {
+        font-size: 15px;
+    }
+    .Page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

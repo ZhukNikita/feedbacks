@@ -10,6 +10,8 @@ import AdminPanel from "./components/AdminComponents/AdminPanel";
 import QrCodePage from "./components/QrCodePage";
 import SubscriptionPage from "./components/SubscriptionComponent/SubscriptionPage";
 import FeedbacksPage from "./components/FeedbacksComponent/FeedbacksPage";
+import RatingSmsAccess from "./components/RatingSmsAccess";
+import Gratitude from "./components/ Gratitude";
 
 function App() {
     const [rating , setRating] = useState(null)
@@ -44,6 +46,12 @@ function App() {
                 </Route>
                 <Route path="/Feedbacks" element={
                     <FeedbacksPage/>}>
+                </Route>
+                <Route path="/SmsAccess" element={
+                    <RatingSmsAccess/>}>
+                </Route>
+                <Route path="/Gratitude" element={
+                    <Gratitude/>}>
                 </Route>
             </Routes>
         </BrowserRouter>
