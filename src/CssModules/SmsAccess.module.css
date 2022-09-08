@@ -1,0 +1,26 @@
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 1px solid rgba(144, 202, 249, 0.46);
+    min-height: 200px;
+    padding: 10px;
+    min-width: 100px;
+}
+.body h2{
+    color: rgb(3, 114, 183);
+    margin: 10px;
+}
+.body input {
+    text-align: center;
+    padding: 10px;
+    margin-left: 20%;
+    width: 30%;
+}
