@@ -41,7 +41,7 @@ export default function AdminRegister() {
     }
 
     return (
-        <div style={{width:'100%' , height:'100%' , display:'flex' , justifyContent:'center', alignItems:'center'}}>
+        <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={admin.body}>
                 <Logo/>
                 <h2 style={{color: 'rgb(103, 58, 183)'}}>Регистрация:</h2>
@@ -116,7 +116,8 @@ export default function AdminRegister() {
                         endAdornment:
                             confirmPassVis === 'password'
                                 ?
-                                <RemoveRedEyeIcon style={{cursor: 'pointer'}} onClick={() => setConfirmPassVis('text')}/>
+                                <RemoveRedEyeIcon style={{cursor: 'pointer'}}
+                                                  onClick={() => setConfirmPassVis('text')}/>
                                 :
                                 <VisibilityOffIcon style={{cursor: 'pointer'}}
                                                    onClick={() => setConfirmPassVis('password')}/>

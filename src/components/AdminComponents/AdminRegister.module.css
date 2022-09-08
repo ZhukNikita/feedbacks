@@ -1,4 +1,4 @@
-.body{
+.body {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,21 +15,24 @@
     padding: 10px;
     min-width: 300px;
 }
-.name{
+
+.name {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-.passVis{
-    cursor: pointer ;
+
+.passVis {
+    cursor: pointer;
     position: absolute;
-    transform: translate(190px , 225px);
+    transform: translate(190px, 225px);
 }
-@media screen and (max-width: 500px){
-    .passVis{
-        cursor: pointer ;
+
+@media screen and (max-width: 500px) {
+    .passVis {
+        cursor: pointer;
         position: absolute;
-        transform: translate(170px , 225px);
+        transform: translate(170px, 225px);
     }
 }

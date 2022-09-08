@@ -50,9 +50,9 @@ export default function RestaurantRegister() {
         mask: '+(38#)-###-####-##',
         placeholder: '_',
     })
-    const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px', marginTop:'10px'}
+    const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px', marginTop: '10px'}
     return (
-        <div style={{width:'100%' , height:'100%' , display:'flex' , justifyContent:'center', alignItems:'center'}}>
+        <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={restaurant.body}>
                 <Logo/>
                 <h2 style={{color: 'rgb(103, 58, 183)'}}>Регистрация:</h2>
@@ -78,13 +78,13 @@ export default function RestaurantRegister() {
                         maxLength: '30',
                     }}
                     InputProps={{
-                        style:{
+                        style: {
                             border: 'none'
                         }
                     }}
                 />
                 {emptyCity}
-                <FormControl fullWidth style={{ marginTop:'10px'}}>
+                <FormControl fullWidth style={{marginTop: '10px'}}>
                     <InputLabel id="demo-simple-select-label">Тип заведения</InputLabel>
                     <Select
                         onChange={e => setRestaurantType(e.target.value)}
@@ -136,7 +136,8 @@ export default function RestaurantRegister() {
                 {emptyJob}
                 <FormControlLabel
                     style={{width: '100%'}}
-                    control={<Checkbox onClick={() => setAgreeTerms(!agreeTerms)} style={{color: 'rgb(103, 58, 183)'}} defaultChecked/>}
+                    control={<Checkbox onClick={() => setAgreeTerms(!agreeTerms)} style={{color: 'rgb(103, 58, 183)'}}
+                                       defaultChecked/>}
                     label="Я согласен с уловиями пользования"
                 />
                 {city === '' || value === '' || restaurantName === '' || restaurantType === '' || agreeTerms !== true || address === '' || job === '' ?

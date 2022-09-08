@@ -4,7 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
 
 
-export default function FeedbacksPageHeader({filterChange,sortChange ,setSearch, sort}) {
+export default function FeedbacksPageHeader({filterChange, sortChange, setSearch, sort}) {
     return (
         <div className={feed.SubsTable}>
             <TextField
@@ -21,9 +21,9 @@ export default function FeedbacksPageHeader({filterChange,sortChange ,setSearch,
                 id="outlined-size-small"
                 placeholder="Поиск..."
                 size="small"
-                onChange={e=>setSearch(e.target.value)}
+                onChange={e => setSearch(e.target.value)}
             />
-            <div  style={{display: 'flex' , alignItems:'center'}}>
+            <div style={{display: 'flex', alignItems: 'center'}}>
                 <select className={feed.Sort} onChange={filterChange}>
                     <option hidden value="status">Фильтры:</option>
                     <option value="status">Статус</option>

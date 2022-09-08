@@ -8,8 +8,8 @@ import React from "react";
 import bar from "../CssModules/NavBar.module.css";
 import {Link} from "react-router-dom";
 
-export default function NavBar(){
-    return(
+export default function NavBar() {
+    return (
         <div className={bar.NavBar}>
             <Link to='/AboutUs'>
                 <Button

@@ -30,7 +30,7 @@ export default function AdminAutho() {
     }
     const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}
     return (
-        <div style={{width:'100%' , height:'100%' , display:'flex' , justifyContent:'center', alignItems:'center'}}>
+        <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={admin.body}>
                 <Logo/>
                 <h2 className={admin.title}>Здравствуйте ,<br/> войти с помощью:</h2>

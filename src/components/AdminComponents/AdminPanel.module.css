@@ -1,7 +1,8 @@
-.Page{
+.Page {
     display: flex;
     padding: 20px;
 }
+
 .body {
     display: block;
     color: black;
@@ -174,7 +175,8 @@
     iframe {
         width: 90%;
     }
-    .body{
+
+    .body {
         width: 100%;
         min-width: 380px;
     }
@@ -187,15 +189,17 @@
     .body h3 {
         font-size: 15px;
     }
-    .Page{
+
+    .Page {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
+
     .SubscriptionContent {
-        width: 40%;
-        height: 25%;
+        width: 150px;
+        height: 170px;
         margin-top: 10%;
         margin-right: 30%;
     }

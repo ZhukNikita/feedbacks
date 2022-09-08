@@ -3,8 +3,8 @@ import {Button} from "@mui/material";
 import React from "react";
 import CloseIcon from '@mui/icons-material/Close';
 
-export default function TermsMessage({handleClose}){
-    return(
+export default function TermsMessage({handleClose}) {
+    return (
         <div className={terms.messageWrapper}>
             <div className={terms.modal}>
                 <div className={terms.button}>
@@ -12,8 +12,8 @@ export default function TermsMessage({handleClose}){
                         onClick={handleClose}
                         variant="contained"
                         style={{
-                            height:' 30px ',
-                            width:' 20px ',
+                            height: ' 30px ',
+                            width: ' 20px ',
                             borderRadius: '4px',
                             backgroundColor: 'rgb(103, 58, 183)',
                         }}
@@ -23,18 +23,18 @@ export default function TermsMessage({handleClose}){
                 <div className={terms.title}>
                     <h3>Условия пользования</h3>
                     <p>Условия rfrfeaksjdhfkhe reeh fdhwe ud
-                    Q REJJKHERIUFHE A'iehchjdhuHUhjg ]a
-                     irhigjfkdjfijaDJ FIEFJ
-                     fjeeij ceHUEWHJFHJD Iufjskrjgirjkdjfjgdrjg a
-                    a r a'ro jkg or
-                     RKAOGKOARR AOR
-                     ARK OROAGJR IAJ A
-                    RG IAJR A[ERGO JA
-                    G ROJG RA
-                    ROGR R ORRJGJAOJEOGJFMV org fgoigsorksl
-                    asrpgkr
-                    kg rkaok ork go korkaokogk okgor kg pg
-                    a gor4korkork pgrkap kpgkork apgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Q REJJKHERIUFHE A'iehchjdhuHUhjg ]a
+                        irhigjfkdjfijaDJ FIEFJ
+                        fjeeij ceHUEWHJFHJD Iufjskrjgirjkdjfjgdrjg a
+                        a r a'ro jkg or
+                        RKAOGKOARR AOR
+                        ARK OROAGJR IAJ A
+                        RG IAJR A[ERGO JA
+                        G ROJG RA
+                        ROGR R ORRJGJAOJEOGJFMV org fgoigsorksl
+                        asrpgkr
+                        kg rkaok ork go korkaokogk okgor kg pg
+                        a gor4korkork pgrkap kpgkork apgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -45,7 +45,7 @@ export default function TermsMessage({handleClose}){
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                        AAAAAAAAAAAAAAAAAA            kg rkaok ork go korkaokogk okgor kg pg
+                        AAAAAAAAAAAAAAAAAA kg rkaok ork go korkaokogk okgor kg pg
                         a gor4korkork pgrkap kpgkork apgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -56,7 +56,8 @@ export default function TermsMessage({handleClose}){
                         aaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa            kg rkaok ork go korkaokogk okgor kg pg
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa kg rkaok ork go korkaokogk okgor
+                        kg pg
                         a gor4korkork pgrkap kpgkork apgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -67,7 +68,8 @@ export default function TermsMessage({handleClose}){
                         aaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa            kg rkaok ork go korkaokogk okgor kg pg
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa kg rkaok ork go korkaokogk okgor
+                        kg pg
                         a gor4korkork pgrkap kpgkork apgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

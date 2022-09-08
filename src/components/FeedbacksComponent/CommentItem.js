@@ -5,7 +5,10 @@ import React, {useState} from "react";
 export default function CommentItem({comments, index, addComment, feedback}) {
     const [adminComment, setAdminComment] = useState('')
     return (
-        <div className={css.comment} style={comments[comments.length - 1] === comments[index] ? {borderBottomLeftRadius: '12px' ,borderBottomRightRadius:'12px' } : {borderRadius:'0px'}}>
+        <div className={css.comment} style={comments[comments.length - 1] === comments[index] ? {
+            borderBottomLeftRadius: '12px',
+            borderBottomRightRadius: '12px'
+        } : {borderRadius: '0px'}}>
             <div style={{width: '100%'}}>
                 <h3 className={css.CommentText}>
                     <TextareaAutosize

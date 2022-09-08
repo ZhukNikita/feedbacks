@@ -21,7 +21,7 @@ export default function AdminPanel() {
                 <div className={admin.Logo}><Logo/></div>
                 <div className={admin.Subscription}>
                     <h5>14 дней</h5>
-                    <div className={admin.raz}>
+                    <div>
                         <InfoIcon className={admin.SubscriptionInfo} style={{height: '18px', width: '18px'}}
                                   onMouseOver={() => setMessageOn(true)}/>
 
@@ -56,7 +56,7 @@ export default function AdminPanel() {
                     <div className={admin.feedbacksList}>
                         <h3 style={{margin: '20px'}}>Последние 5</h3>
                         <div className={admin.feedbacksListContent}>
-                            <FeedbacksList comment={false} feedbacks={feedbacks.slice(0,5)}/>
+                            <FeedbacksList comment={false} feedbacks={feedbacks.slice(0, 5)}/>
                         </div>
                         <div className={admin.feedbacksListFooter}>
                             <Link to='/Feedbacks'>
@@ -67,9 +67,9 @@ export default function AdminPanel() {
                 </div>
             </div>
             {
-            messageOn && (
-                <SmallSubsMessage setMessageOn={setMessageOn}/>
-            )
+                messageOn && (
+                    <SmallSubsMessage setMessageOn={setMessageOn}/>
+                )
             }
         </div>
     )

@@ -1,7 +1,8 @@
-.Page{
+.Page {
     display: flex;
 }
-.body{
+
+.body {
     color: black;
     font-size: 0.875rem;
     font-weight: 400;
@@ -14,7 +15,8 @@
     min-width: 500px;
     width: 100%;
 }
-.SubsTable{
+
+.SubsTable {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -25,51 +27,60 @@
     color: rgb(183, 129, 3);
     background-color: rgb(255, 247, 205);
 }
-.SubsTable h2{
+
+.SubsTable h2 {
     margin-left: 10px;
 }
-.prices{
+
+.prices {
     float: right;
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.SubsButtons{
+
+.SubsButtons {
     width: 55%;
     justify-content: space-between;
     float: right;
     display: flex;
     align-items: center;
 }
-.body hr{
+
+.body hr {
     float: right;
     width: 55%;
     border: none;
     border-bottom: 1px solid rgb(217, 217, 217);
 }
+
 @media screen and (max-width: 500px) {
-    .prices{
+    .prices {
         width: 56%;
     }
-    .SubsButtons{
+
+    .SubsButtons {
         width: 100%;
         justify-content: right;
         float: right;
         display: flex;
         align-items: center;
     }
-    .SubsButtons button{
+
+    .SubsButtons button {
         height: 33px;
         width: 36px;
         margin: 5px;
         float: right;
     }
-    .body{
+
+    .body {
         width: 100%;
         min-width: 380px;
     }
-    .Page{
+
+    .Page {
         display: flex;
         align-items: center;
         justify-content: center;

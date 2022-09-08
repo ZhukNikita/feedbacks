@@ -59,10 +59,12 @@
         width: 500px;
     }
 }
-.button{
+
+.button {
     width: 100%;
 }
-.button button{
+
+.button button {
     float: right;
     margin: 10px;
     width: 10px;

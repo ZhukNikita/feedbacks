@@ -8,7 +8,7 @@ import Logo from "./Logo";
 function RatingPage({rating, setRating}) {
     const [feedback, setFeedBack] = useState('');
     return (
-        <div style={{width:'100%' , height:'100%' , display:'flex' , justifyContent:'center', alignItems:'center'}}>
+        <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={rate.body}>
                 <Logo/>
                 <h3>СТРАНИЦА ОТЗЫВОВ</h3>

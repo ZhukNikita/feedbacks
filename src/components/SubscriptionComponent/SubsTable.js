@@ -10,20 +10,22 @@ import subs from './SubscriptionPage.module.css';
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
 
 function createData(name, one, two, three) {
-    return { name, one, two, three };
+    return {name, one, two, three};
 }
-const doneStyle = {color:'green'};
+
+const doneStyle = {color: 'green'};
 
 const rows = [
-    createData('Тариф 1', <DoneOutlineIcon style={doneStyle}/>, <DoneOutlineIcon style={doneStyle}/>, <DoneOutlineIcon style={doneStyle}/>),
+    createData('Тариф 1', <DoneOutlineIcon style={doneStyle}/>, <DoneOutlineIcon style={doneStyle}/>, <DoneOutlineIcon
+        style={doneStyle}/>),
     createData('Тариф 2', '', <DoneOutlineIcon style={doneStyle}/>, <DoneOutlineIcon style={doneStyle}/>),
     createData('Тариф 3', '', '', <DoneOutlineIcon style={doneStyle}/>),
 ];
 
 export default function SubsTable() {
     return (
-        <TableContainer component={Paper} style={{border:'none' , boxShadow:'none'}}>
-            <Table sx={{ minWidth: '50%' , boxShadow:'none' }} aria-label="caption table">
+        <TableContainer component={Paper} style={{border: 'none', boxShadow: 'none'}}>
+            <Table sx={{minWidth: '50%', boxShadow: 'none'}} aria-label="caption table">
                 <caption>
                     <div className={subs.prices}>
                         <h4>4.99$</h4>
