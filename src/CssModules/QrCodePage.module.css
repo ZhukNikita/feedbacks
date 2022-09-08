@@ -1,3 +1,8 @@
+.Page{
+    display: flex;
+    margin-right: 200px;
+    padding: 10px;
+}
 .body{
     display: flex;
     justify-content: center;
@@ -12,10 +17,7 @@
     border-radius: 12px;
     border: 1px solid rgba(144, 202, 249, 0.46);
     min-height: 400px;
-    min-width: 45%;
-}
-.buttons{
-
+    min-width: 70%;
 }
 .body h2 {
     margin: 20px;
@@ -39,5 +41,8 @@
         width: 70%;
         height: 100%;
     }
-
+    .Page{
+        display: block;
+        margin: 0;
+    }
 }

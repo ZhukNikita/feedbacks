@@ -4,7 +4,93 @@ export const feedbacks = [{
     id: Math.random(1000),
     rate: 3,
     UserName: 'John',
-    text: 'Delicious',
+    text: 'DeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
+        'd' +
+        'adsdasdsdadadasdwaesdawdwadsdas',
     status: 'Активный',
     date: now
 

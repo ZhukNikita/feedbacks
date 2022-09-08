@@ -5,13 +5,14 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import RatingAutho from "./components/RatingAutho";
 import AdminAutho from "./components/AdminComponents/AdminAutho";
 import AdminRegister from "./components/AdminComponents/AdminRegister";
-import RestaurantRegister from "./components/RestaurantRegister";
+import RestaurantRegister from "./components/AdminComponents/RestaurantRegister";
 import AdminPanel from "./components/AdminComponents/AdminPanel";
 import QrCodePage from "./components/QrCodePage";
 import SubscriptionPage from "./components/SubscriptionComponent/SubscriptionPage";
 import FeedbacksPage from "./components/FeedbacksComponent/FeedbacksPage";
 import RatingSmsAccess from "./components/RatingSmsAccess";
 import Gratitude from "./components/ Gratitude";
+import NoMatch from "./components/NoMatch";
 
 function App() {
     const [rating , setRating] = useState(null)
@@ -52,6 +53,9 @@ function App() {
                 </Route>
                 <Route path="/Gratitude" element={
                     <Gratitude/>}>
+                </Route>
+                <Route path="*" element={
+                    <NoMatch/>}>
                 </Route>
             </Routes>
         </BrowserRouter>

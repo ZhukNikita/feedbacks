@@ -23,12 +23,10 @@ export default function FeedbacksPage(){
         return feedback.UserName.toLowerCase(0).includes(search.toLowerCase())
     })
     return(
-        <div className={feed.App}>
             <div className={feed.Page}>
                 <NavBar/>
                 <div className={feed.body}>
                     <FeedbacksPageHeader
-
                         setSearch={setSearch}
                         sort={sort}
                         sortChange={sortChange}
@@ -38,6 +36,5 @@ export default function FeedbacksPage(){
                     <FeedbacksList comment={true} feedbacks={SearchFeedback}/>
                 </div>
             </div>
-        </div>
     )
 }

@@ -1,5 +1,6 @@
 .Page{
     display: flex;
+    padding: 20px;
 }
 .body {
     display: block;
@@ -48,14 +49,11 @@
 }
 
 .SubscriptionFullInfo {
-    width: 100%;
-    height: 100%;
     color: black;
-    display: flex;
-    justify-content: right;
 }
 
 .SubscriptionContent {
+    position: absolute;
     margin-top: 30px;
     margin-left: 20px;
     border-radius: 10px;
@@ -151,7 +149,6 @@
 .feedbacksListFooter {
     display: flex;
     justify-content: right;
-    align-items: center;
     height: 50px;
     width: 100%;
     background-color: white;
@@ -161,10 +158,8 @@
 }
 
 .feedbacksListFooter a {
-    margin-right: 20px;
-    margin-bottom: 18px;
     color: rgb(122, 12, 46);
-    height: 0;
+    margin-right: 10px;
 }
 
 .feedbacksListContent {

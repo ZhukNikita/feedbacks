@@ -1,12 +1,12 @@
-import restaurant from "../CssModules/RestaurantRegister.module.css";
-import Logo from "./Logo";
+import restaurant from "../../CssModules/RestaurantRegister.module.css";
+import Logo from "../Logo";
 import React, {useState} from "react";
-import {CssTextField} from "./InputStyle";
+import {CssTextField} from "../InputStyle";
 import useMask from "react-mask-hook";
 import {Button, Checkbox, FormControl, FormControlLabel, InputLabel, MenuItem, Select} from "@mui/material";
 import {Link} from "react-router-dom";
-import admin from "./AdminComponents/AdminAutho.module.css";
-import TermsMessage from "./MessageComponent/TermsMessage";
+import admin from "./AdminAutho.module.css";
+import TermsMessage from "../MessageComponent/TermsMessage";
 
 
 export default function RestaurantRegister() {
@@ -50,7 +50,7 @@ export default function RestaurantRegister() {
         mask: '+(38#)-###-####-##',
         placeholder: '_',
     })
-    const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}
+    const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px', marginTop:'10px'}
     return (
         <div style={{width:'100%' , height:'100%' , display:'flex' , justifyContent:'center', alignItems:'center'}}>
             <div className={restaurant.body}>
@@ -84,7 +84,7 @@ export default function RestaurantRegister() {
                     }}
                 />
                 {emptyCity}
-                <FormControl fullWidth>
+                <FormControl fullWidth style={{ marginTop:'10px'}}>
                     <InputLabel id="demo-simple-select-label">Тип заведения</InputLabel>
                     <Select
                         onChange={e => setRestaurantType(e.target.value)}
@@ -136,8 +136,7 @@ export default function RestaurantRegister() {
                 {emptyJob}
                 <FormControlLabel
                     style={{width: '100%'}}
-                    control={<Checkbox onClick={() => setAgreeTerms(!agreeTerms)}
-                                       style={{color: 'rgb(103, 58, 183)'}} defaultChecked/>}
+                    control={<Checkbox onClick={() => setAgreeTerms(!agreeTerms)} style={{color: 'rgb(103, 58, 183)'}} defaultChecked/>}
                     label="Я согласен с уловиями пользования"
                 />
                 {city === '' || value === '' || restaurantName === '' || restaurantType === '' || agreeTerms !== true || address === '' || job === '' ?

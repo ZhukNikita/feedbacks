@@ -48,8 +48,8 @@ export default function FeedBackItem({feedback, comment}) {
 
                 </div>
                 <h2>{feedback.UserName}</h2>
-                <h3>{feedback.text}</h3>
-                <h3 style={{textAlign: 'right', color: 'lightgray', margin: '10px'}}>{feedback.date}</h3>
+                <h3 className={css.mainText}>{feedback.text}</h3>
+                <h3 className={css.date} style={{textAlign: 'right', color: 'lightgray', margin: '10px' , overflow: 'hidden'}}>{feedback.date}</h3>
                 {
                     comment && (<h3 className={css.commentButton} onClick={openCloseComments}>Коментарии</h3>)
                 }
