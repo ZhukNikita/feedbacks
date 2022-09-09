@@ -9,8 +9,8 @@
 }
 
 .mainText {
-    height: 80px;
-    overflow: auto;
+    margin-top: 20px;
+    height: 100%;
     word-break: break-word;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -18,7 +18,10 @@
 }
 
 .date {
+    margin: 20px 20px 15px 0;
     height: 100%;
+    text-align: right;
+    color: lightgray;
 }
 
 .item {

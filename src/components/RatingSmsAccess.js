@@ -15,7 +15,7 @@ export default function RatingSmsAccess() {
                         maxLength: '3',
                     }}
                     style={{width: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}
-                    type='password'
+                    type='text'
                 />
                 <Link to='/Gratitude'>
                     <Button

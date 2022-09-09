@@ -15,7 +15,11 @@
     padding: 10px;
     min-width: 300px;
 }
-
+.title{
+    color: rgb(103, 58, 183) ;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 .name {
     display: flex;
     justify-content: space-between;

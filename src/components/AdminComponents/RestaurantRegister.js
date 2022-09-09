@@ -29,7 +29,7 @@ export default function RestaurantRegister() {
             setEmptyCity(<h5 style={{width: '100%', color: "red"}}>Поле "Город" не может быть пустым</h5>)
         }
         if (!value) {
-            setEmptyTelNumber(<h5 style={{width: '100%', color: "red"}}>Поле "Фамилия" не может быть пустым</h5>)
+            setEmptyTelNumber(<h5 style={{width: '100%', color: "red"}}>Поле "Номер телефона" не может быть пустым</h5>)
         }
         if (!address) {
             setEmptyAddress(<h5 style={{width: '100%', color: "red"}}>Поле "Aдрес" не может быть пустым</h5>)
@@ -55,7 +55,7 @@ export default function RestaurantRegister() {
         <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={restaurant.body}>
                 <Logo/>
-                <h2 style={{color: 'rgb(103, 58, 183)'}}>Регистрация:</h2>
+                <h2 className={restaurant.title}>Регистрация:</h2>
                 <CssTextField
                     style={style}
                     name="telephone"

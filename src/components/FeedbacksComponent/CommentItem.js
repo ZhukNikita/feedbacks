@@ -20,32 +20,33 @@ export default function CommentItem({comments, index, addComment, feedback}) {
                     /></h3>
             </div>
             <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
-                <div>
-                    {
-                        comments[comments.length - 1] === comments[index] ? (<Button
-                            sx={() => ({
-                                margin: '15px',
-                                borderRadius: '8px',
-                                color: 'rgb(183, 129, 3)',
-                                height: '20px',
-                                width: "200px",
-                                backgroundColor: 'rgb(255,239,185)',
-                                fontWeight: 'bold',
-                                fontSize: '12px',
-                                textTransform: 'none',
-                                '&:hover': {
-                                    background: `rgb(206, 190, 107)`,
-                                },
-                            })}
-                            variant="contained"
-                            onClick={addComment}
-                        >Добавить коментарий
-                        </Button>) : ''
-                    }
-                </div>
+
                 <div style={{width: '100%', marginRight: '20px'}}>
                     <h3 style={{width: "100%", textAlign: 'right'}}>Admin Name</h3>
-                    <h3 style={{textAlign: 'right', color: 'lightgray',}}>{feedback.date}</h3>
+                    <div>
+                        {
+                            comments[comments.length - 1] === comments[index] ? (<Button
+                                sx={() => ({
+                                    float:'right',
+                                    margin: '15px 0 15px 15px',
+                                    borderRadius: '8px',
+                                    color: 'rgb(183, 129, 3)',
+                                    height: '20px',
+                                    width: "200px",
+                                    backgroundColor: 'rgb(255,239,185)',
+                                    fontWeight: 'bold',
+                                    fontSize: '12px',
+                                    textTransform: 'none',
+                                    '&:hover': {
+                                        background: `rgb(206, 190, 107)`,
+                                    },
+                                })}
+                                variant="contained"
+                                onClick={addComment}
+                            >Добавить коментарий
+                            </Button>) : ''
+                        }
+                    </div>
                 </div>
             </div>
         </div>

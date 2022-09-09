@@ -15,11 +15,18 @@
     padding: 20px 50px;
     min-width: 300px;
 }
+.title{
+    color: rgb(103, 58, 183) ;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 .hr{
     width: 100%;
     color: lightgray;
     border: none;
-    border-bottom: 1px solid lightgray
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 .messageWrapper {
     position: fixed;

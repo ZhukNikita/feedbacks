@@ -26,7 +26,6 @@ export default function AdminPanel() {
                                   onMouseOver={() => setMessageOn(true)}/>
 
                     </div>
-
                 </div>
                 <br/>
                 <br/>
@@ -36,8 +35,8 @@ export default function AdminPanel() {
                     </div>
                     <div className={admin.Video}>
                         <iframe
-                            width="370"
-                            height="200"
+                            width="100%"
+                            height="400px"
                             style={{borderRadius: '12px'}}
                             src="https://www.youtube.com/embed/RK1K2bCg4J8"
                             title="YouTube video player" frameBorder="0"
@@ -52,9 +51,8 @@ export default function AdminPanel() {
                             backgroundColor: 'rgb(103, 58, 183)'
                         }}>Сгенерировать QR</Button>
                     </Link>
-                    <div className={admin.feedbackTitle}><h3>Мои отзывы:</h3></div>
                     <div className={admin.feedbacksList}>
-                        <h3 style={{margin: '20px'}}>Последние 5</h3>
+                        <h3 style={{margin: '20px'}}>Новые отзывы клиентов:</h3>
                         <div className={admin.feedbacksListContent}>
                             <FeedbacksList comment={false} feedbacks={feedbacks.slice(0, 5)}/>
                         </div>

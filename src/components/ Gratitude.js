@@ -5,7 +5,7 @@ export default function Gratitude() {
         <div style={{display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center'}}>
             <div className={access.body}>
                 <h2>Спасибо!</h2>
-                <iframe width="270" height="200" src="https://www.youtube.com/embed/22qkRslZB_s"
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/22qkRslZB_s"
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen>

@@ -12,7 +12,6 @@
 }
 
 .modal {
-    overflow: auto;
     min-height: 300px;
     max-height: 80%;
     height: 80%;
@@ -44,6 +43,7 @@
 }
 
 .title p {
+    height: 80%;
     margin: 20px;
     font-size: 17px;
     color: black;
@@ -51,6 +51,7 @@
     word-break: break-word;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    overflow: auto;
 }
 
 @keyframes slidein {

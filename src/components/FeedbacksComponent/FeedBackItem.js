@@ -23,6 +23,7 @@ export default function FeedBackItem({feedback, comment}) {
             <div className={css.content}>
                 <div className={css.ratingStatus}>
                     <Rating
+                        style={{margin: '10px 0 20px 0'}}
                         readOnly={true}
                         name="simple-controlled"
                         value={feedback.rate}
@@ -49,12 +50,7 @@ export default function FeedBackItem({feedback, comment}) {
                 </div>
                 <h2>{feedback.UserName}</h2>
                 <h3 className={css.mainText}>{feedback.text}</h3>
-                <h3 className={css.date} style={{
-                    textAlign: 'right',
-                    color: 'lightgray',
-                    margin: '10px',
-                    overflow: 'hidden'
-                }}>{feedback.date}</h3>
+                <h3 className={css.date}>{feedback.date}</h3>
                 {
                     comment && (<h3 className={css.commentButton} onClick={openCloseComments}>Коментарии</h3>)
                 }

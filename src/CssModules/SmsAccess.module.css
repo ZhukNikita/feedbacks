@@ -11,16 +11,16 @@
     border-radius: 12px;
     border: 1px solid rgba(144, 202, 249, 0.46);
     min-height: 200px;
-    padding: 10px;
-    min-width: 100px;
+    padding: 50px;
+    min-width: 300px;
 }
 .body h2{
     color: rgb(3, 114, 183);
-    margin: 10px;
+    margin-bottom: 30px;
 }
 .body input {
     text-align: center;
     padding: 10px;
-    margin-left: 20%;
+    margin-left: 24%;
     width: 30%;
 }

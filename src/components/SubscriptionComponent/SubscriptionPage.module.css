@@ -1,5 +1,6 @@
 .Page {
     display: flex;
+
 }
 
 .body {
@@ -12,7 +13,7 @@
     border-radius: 15px;
     border: 1px solid rgba(144, 202, 249, 0.46);
     min-height: 400px;
-    min-width: 500px;
+    min-width: 700px;
     width: 100%;
 }
 

@@ -24,6 +24,8 @@
 }
 
 .Video {
+    height: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,19 +118,6 @@
     border-radius: 6px;
     background-color: rgb(103, 58, 183);
 }
-
-.feedbackTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    color: rgb(4, 41, 122);
-    width: 80%;
-    background-color: rgb(209, 233, 252);
-    height: 60px;
-    box-shadow: 1px 2px 3px 0.2px rgba(0, 0, 0, 0.33);
-}
-
 .SubscriptionFullInfoBody span {
     color: gray;
 }

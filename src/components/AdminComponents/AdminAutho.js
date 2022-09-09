@@ -33,7 +33,8 @@ export default function AdminAutho() {
         <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={admin.body}>
                 <Logo/>
-                <h2 className={admin.title}>Здравствуйте ,<br/> войти с помощью:</h2>
+                <h2 className={admin.title}>Здравствуйте,</h2>
+                <h2 className={admin.title}>войти с помощью:</h2>
                 <div>
                     <FaceBook/>
                     <Google/>
@@ -92,7 +93,7 @@ export default function AdminAutho() {
                                 borderRadius: '4px',
                                 borderColor: 'rgb(103, 58, 183)',
                                 color: 'rgb(103, 58, 183)'
-                            }}>Отправить</Button>
+                            }}>Войти</Button>
                     </Link>
                     :
                     <Link to='/AdminPanel'>
@@ -100,7 +101,7 @@ export default function AdminAutho() {
                             margin: '10px',
                             borderRadius: '4px',
                             backgroundColor: 'rgb(103, 58, 183)'
-                        }}>Отправить</Button>
+                        }}>Войти</Button>
                     </Link>
                 }
                 <Link to='/AdminRegister'>

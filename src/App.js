@@ -13,19 +13,22 @@ import FeedbacksPage from "./components/FeedbacksComponent/FeedbacksPage";
 import RatingSmsAccess from "./components/RatingSmsAccess";
 import Gratitude from "./components/ Gratitude";
 import NoMatch from "./components/NoMatch";
+import Settings from "./components/Settings/Settings";
+import ProFunctions from "./components/ProFunctions/ProFunctions";
+import Questions from "./components/Questions/Questions";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
-    const [rating , setRating] = useState(null)
     const [QrSrc , setQrSrc] = useState('http://localhost:3000')
   return (
     <div className="App">
         <BrowserRouter>
             <Routes>
                 <Route path="/Rating" element={
-                    <RatingPage rating = {rating} setRating ={setRating}/>}>
+                    <RatingPage/>}>
                 </Route>
                 <Route path="/RatingAutho" element={
-                    <RatingAutho rating = {rating} setRating ={setRating}/>}>
+                    <RatingAutho/>}>
                 </Route>
                 <Route path="/" element={
                     <AdminAutho/>}>
@@ -53,6 +56,18 @@ function App() {
                 </Route>
                 <Route path="/Gratitude" element={
                     <Gratitude/>}>
+                </Route>
+                <Route path="/AboutUs" element={
+                    <AboutUs/>}>
+                </Route>
+                <Route path="/Questions" element={
+                    <Questions/>}>
+                </Route>
+                <Route path="/ProFunctions" element={
+                    <ProFunctions/>}>
+                </Route>
+                <Route path="/Settings" element={
+                    <Settings/>}>
                 </Route>
                 <Route path="*" element={
                     <NoMatch/>}>

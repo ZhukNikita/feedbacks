@@ -1,6 +1,5 @@
 .Page{
     display: flex;
-    margin-right: 200px;
     padding: 10px;
 }
 .body{
@@ -17,7 +16,7 @@
     border-radius: 12px;
     border: 1px solid rgba(144, 202, 249, 0.46);
     min-height: 400px;
-    min-width: 70%;
+    min-width: 700px;
 }
 .body h2 {
     margin: 20px;

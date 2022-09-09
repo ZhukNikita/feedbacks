@@ -6,7 +6,8 @@
     min-height: 300px;
     border-radius: 10px;
     background-color: white;
-    padding: 15px;
+    padding: 50px;
+    min-width: 300px;
 }
 .box {
     animation: 2s show ease;

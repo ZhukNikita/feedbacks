@@ -29,7 +29,7 @@ export default function AdminRegister() {
             setEmptySurname(<h5 style={{width: '100%', color: "red"}}>Поле "Фамилия" не может быть пустым</h5>)
         }
         if (!confirmPass || confirmPass !== password) {
-            setEmptyConfirmPass('Поле "Повторить пароль" не совпадает или пустое')
+            setEmptyConfirmPass('Поле "Повторить пароль" не совпадает')
         }
         if (!email) {
             setEmptyInput(' Email некорректный')
@@ -39,12 +39,21 @@ export default function AdminRegister() {
         }
 
     }
-
+    function PasswordChange(e){
+        setPassword(e.target.value)
+        setEmptyPass('')
+        setEmptyConfirmPass('')
+    }
+    function PasswordConfirmChange(e){
+        setConfirmPass(e.target.value)
+        setEmptyPass('')
+        setEmptyConfirmPass('')
+    }
     return (
         <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={admin.body}>
                 <Logo/>
-                <h2 style={{color: 'rgb(103, 58, 183)'}}>Регистрация:</h2>
+                <h2 className={admin.title}>Регистрация:</h2>
                 <div className={admin.name}>
                     <NameTextField
                         onChange={e => setName(e.target.value)}
@@ -80,12 +89,12 @@ export default function AdminRegister() {
                 />
                 <h5 style={{width: '100%', color: "red"}}>{emptyInput}</h5>
                 <CssTextField
-                    onChange={e => setPassword(e.target.value)}
+                    onChange={(e)=>PasswordChange(e)}
                     style={{width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}}
                     name="password"
                     type={passwordVis}
-                    placeholder="password"
-                    label="Password"
+                    placeholder="Пароль"
+                    label="Пароль"
                     margin='normal'
                     inputProps={{
                         maxLength: '30',
@@ -102,12 +111,12 @@ export default function AdminRegister() {
                 />
                 <h5 style={{width: '100%', color: "red"}}>{emptyPass}</h5>
                 <CssTextField
-                    onChange={e => setConfirmPass(e.target.value)}
+                    onChange={e => PasswordConfirmChange(e)}
                     style={{width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}}
                     name="Confirm password"
                     type={confirmPassVis}
-                    placeholder="Confirm password"
-                    label=" Confirm Password"
+                    placeholder="Повторить пароль"
+                    label="Повторить пароль"
                     margin='normal'
                     inputProps={{
                         maxLength: '30',

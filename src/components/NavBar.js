@@ -51,7 +51,7 @@ export default function NavBar() {
                     Тарифы
                 </Button>
             </Link>
-            <Link to='/ProFunction'>
+            <Link to='/ProFunctions'>
                 <Button
                     startIcon={<DiamondIcon/>}
                     sx={() => ({

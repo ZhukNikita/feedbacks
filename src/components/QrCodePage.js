@@ -34,7 +34,7 @@ export default function QrCodePage({text}) {
                     <img src={src} alt="QrCode" style={{mixBlendMode: 'multiply'}}/>
                 </div>
 
-                <div className={qr.buttons}>
+                <div>
                     <Button
                         variant="contained"
                         style={{
