@@ -13,8 +13,6 @@ export default function RatingAutho() {
     const [emptyUserName , setEmptyUserName] = useState('')
     const [emptyPhoneNumber , setEmptyPhoneNumber] = useState('')
     const [value, setValue] = useState('');
-
-
     const maskProps = useMask({
         value,
         onChange: setValue,
