@@ -51,7 +51,6 @@ export default function FeedBackItem({feedback, comment}) {
                     </div>
 
                 </div>
-
                 <h3 className={css.mainText}>{feedback.text}</h3>
                 <h3 className={css.date}>{feedback.date}</h3>
                 {

@@ -42,7 +42,7 @@ export default function AdminPanel() {
                     </div>
                     <Link to='/QrPage'>
                         <Button variant="contained" style={{
-                            margin: '10px',
+                            margin: '25px 10px 10px 10px',
                             borderRadius: '8px',
                             backgroundColor: 'rgb(103, 58, 183)'
                         }}>Сгенерировать QR</Button>
@@ -62,7 +62,7 @@ export default function AdminPanel() {
             </div>
             {
                 messageOn &&
-                (<div style={{display:'flex', alignItems:'center' , justifyContent:'center' , position:'relative' ,bottom:'85px', left:'134px'}}>
+                (<div style={{display:'flex', alignItems:'center' , justifyContent:'center' , position:'relative' ,bottom:'114px', left:'134px'}}>
                     <SmallSubsMessage setMessageOn={setMessageOn}/>
                 </div>)
             }
