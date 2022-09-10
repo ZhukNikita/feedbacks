@@ -31,7 +31,7 @@ export default function QrCodePage({text}) {
             <div className={qr.body}>
                 <h2>QR сгенерирован</h2>
                 <div className={qr.QrCode}>
-                    <img src={src} alt="QrCode" style={{mixBlendMode: 'multiply'}}/>
+                    <img src={src} alt="QrCode" style={{mixBlendMode: 'multiply' , width:'250px' , height:'250px'}}/>
                 </div>
 
                 <div>
@@ -62,7 +62,7 @@ export default function QrCodePage({text}) {
                 <div className={qr.Video} style={{width: '100%'}}>
                     <iframe
                         style={{borderRadius: '12px'}}
-                        width="380px" height="210px" src="https://www.youtube.com/embed/D7SlK16o82o"
+                        width="90%" height="310px" src="https://www.youtube.com/embed/D7SlK16o82o"
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen>

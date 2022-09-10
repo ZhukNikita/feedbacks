@@ -22,7 +22,6 @@ export default function CommentItem({comments, index, addComment, feedback}) {
             <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
 
                 <div style={{width: '100%', marginRight: '20px'}}>
-                    <h3 style={{width: "100%", textAlign: 'right'}}>Admin Name</h3>
                     <div>
                         {
                             comments[comments.length - 1] === comments[index] ? (<Button

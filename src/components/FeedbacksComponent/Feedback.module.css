@@ -15,12 +15,19 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 .date {
     margin: 20px 20px 15px 0;
     height: 100%;
-    text-align: right;
+    text-align: left;
     color: lightgray;
 }
 
