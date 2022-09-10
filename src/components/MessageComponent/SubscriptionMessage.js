@@ -7,8 +7,8 @@ export default function SubscriptionMessage({handleClose}) {
         <div className={message.messageWrapper}>
             <div className={message.modal}>
                 <div className={message.title}>
-                    <h3>Внимание</h3>
-                    <h4>Вы уверены? Это действие активирует QR код на 14 дней.</h4>
+                    <h3>Подтверждение активации демо режима</h3>
+                    <h4>Это действие активирует QR код на 14 дней.</h4>
                 </div>
                 <div>
                     <Button
@@ -16,7 +16,7 @@ export default function SubscriptionMessage({handleClose}) {
                         style={{
                             margin: '10px',
                             borderRadius: '8px',
-                            backgroundColor: 'rgb(103, 58, 183)',
+                            backgroundColor: 'rgb(109,248,79)',
                             width: '140px'
                         }}
                         onClick={() => handleClose()}
@@ -27,7 +27,7 @@ export default function SubscriptionMessage({handleClose}) {
                         style={{
                             margin: '10px',
                             borderRadius: '8px',
-                            backgroundColor: 'rgb(103, 58, 183)',
+                            backgroundColor: 'rgb(255,102,102)',
                             width: '140px'
                         }}
                         onClick={() => handleClose()}

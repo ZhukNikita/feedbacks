@@ -54,7 +54,7 @@ function RatingPage() {
                     style={{marginTop: '20px', width: '100%', borderRadius: '10px'}}
                 />
                 {emptyFeedBack}
-                {feedback === ''|| feedback.length > 1000 ?
+                {feedback === '' || feedback.length > 1000 ?
                         <Button variant="outlined" onClick={Check} style={{ borderRadius: '12px'}}>Отправить</Button>
                     :
                     <Link to='/RatingAutho'>

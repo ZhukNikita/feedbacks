@@ -11,37 +11,42 @@ import TermsMessage from "../MessageComponent/TermsMessage";
 
 export default function RestaurantRegister() {
     const [value, setValue] = useState('');
+    const [country, setCountry] = useState('');
     const [city, setCity] = useState('');
     const [restaurantType, setRestaurantType] = useState('Restaurant');
     const [restaurantName, setRestaurantName] = useState('');
+    const [restaurantNumber, setRestaurantNumber] = useState(0);
     const [address, setAddress] = useState('');
+    const [other, setOther] = useState('');
     const [job, setJob] = useState('');
     const [agreeTerms, setAgreeTerms] = useState(true);
     const [emptyCity, setEmptyCity] = useState('')
+    const [emptyOther, setEmptyOther] = useState('')
+    const [emptyCountry, setEmptyCountry] = useState('')
     const [emptyTelNumber, setEmptyTelNumber] = useState('')
     const [emptyRestaurantName, setEmptyRestaurantName] = useState('')
+    const [emptyRestaurantNumber, setEmptyRestaurantNumber] = useState('')
     const [emptyAddress, setEmptyAddress] = useState('')
     const [emptyJob, setEmptyJob] = useState('')
     const [messageOn, setMessageOn] = useState(false)
     const handleClose = () => setMessageOn(false);
     const Check = () => {
-        if (!city) {
-            setEmptyCity(<h5 style={{width: '100%', color: "red"}}>Поле "Город" не может быть пустым</h5>)
-        }
-        if (!value) {
-            setEmptyTelNumber(<h5 style={{width: '100%', color: "red"}}>Поле "Номер телефона" не может быть пустым</h5>)
-        }
-        if (!address) {
-            setEmptyAddress(<h5 style={{width: '100%', color: "red"}}>Поле "Aдрес" не может быть пустым</h5>)
-        }
-        if (!restaurantName) {
-            setEmptyRestaurantName(<h5 style={{width: '100%', color: "red"}}>Поле "Название заведения" не может быть
-                пустым</h5>)
-        }
-        if (!job) {
-            setEmptyJob(<h5 style={{width: '100%', color: "red"}}>Поле "Ваша должность" не может быть пустым</h5>)
-        }
 
+        if (!city) setEmptyCity(<h5 style={{width: '100%', color: "red"}}>Поле "Город" не может быть пустым</h5>)
+
+        if (!value) setEmptyTelNumber(<h5 style={{width: '100%', color: "red"}}>Поле "Номер телефона" не может быть пустым</h5>)
+
+        if (!address) setEmptyAddress(<h5 style={{width: '100%', color: "red"}}>Поле "Aдрес" не может быть пустым</h5>)
+
+        if (!restaurantName) setEmptyRestaurantName(<h5 style={{width: '100%', color: "red"}}>Поле "Название заведения" не может быть пустым</h5>)
+
+        if (!job) setEmptyJob(<h5 style={{width: '100%', color: "red"}}>Поле "Ваша должность" не может быть пустым</h5>)
+
+        if (!country) setEmptyCountry(<h5 style={{width: '100%', color: "red"}}>Поле "Страна" не может быть пустым</h5>)
+
+        if (!other) setEmptyOther(<h5 style={{width: '100%', color: "red"}}>Поле "Свой варинт" не может быть пустым</h5>)
+
+        if (!restaurantNumber) setEmptyRestaurantNumber(<h5 style={{width: '100%', color: "red"}}>Поле "Свой варинт" не может быть пустым</h5>)
 
     }
     const maskProps = useMask({
@@ -67,6 +72,23 @@ export default function RestaurantRegister() {
                     }}
                 />
                 {emptyTelNumber}
+                <CssTextField
+                    onChange={e => setCountry(e.target.value)}
+                    style={style}
+                    name="city"
+                    type="text"
+                    placeholder="Страна"
+                    label="Страна"
+                    inputProps={{
+                        maxLength: '30',
+                    }}
+                    InputProps={{
+                        style: {
+                            border: 'none'
+                        }
+                    }}
+                />
+                {emptyCountry}
                 <CssTextField
                     onChange={e => setCity(e.target.value)}
                     style={style}
@@ -96,8 +118,24 @@ export default function RestaurantRegister() {
                         <MenuItem value="Restaurant">Ресторан</MenuItem>
                         <MenuItem value='Cafe'>Кафе</MenuItem>
                         <MenuItem value='Beauty saloon'>Салон красоты</MenuItem>
+                        <MenuItem value='Other'>Другое</MenuItem>
                     </Select>
                 </FormControl>
+                {
+                    restaurantType === 'Other'?
+                        <CssTextField
+                            onChange={e => setOther(e.target.value)}
+                            style={style}
+                            name="name"
+                            type="text"
+                            placeholder="Свой вариант"
+                            label="Свой вариант"
+                            inputProps={{
+                                maxLength: '30',
+                            }}
+                        />: ''
+                }
+                {emptyOther}
                 <CssTextField
                     onChange={e => setRestaurantName(e.target.value)}
                     style={style}
@@ -110,6 +148,17 @@ export default function RestaurantRegister() {
                     }}
                 />
                 {emptyRestaurantName}
+                <CssTextField
+                    onChange={e => setRestaurantNumber(e.target.value)}
+                    style={style}
+                    name="name"
+                    type="number"
+                    placeholder="Количество заведений"
+                    label="Количество заведений"
+                    inputProps={{
+                        maxLength: '30',
+                    }}
+                />
                 <CssTextField
                     onChange={e => setAddress(e.target.value)}
                     style={style}

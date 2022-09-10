@@ -9,6 +9,11 @@
     border-radius: 12px;
     margin-right: 50px;
 }
+.Logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .NavBar button{
     margin: 10px;
 }

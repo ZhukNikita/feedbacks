@@ -13,18 +13,14 @@ import {feedbacks} from "../FeedbacksComponent/Feedback'sData.js"
 
 export default function AdminPanel() {
     const [messageOn, setMessageOn] = useState(false)
-
     return (
         <div className={admin.Page}>
             <NavBar/>
             <div className={admin.body}>
-                <div className={admin.Logo}><Logo/></div>
                 <div className={admin.Subscription}>
-                    <h5>14 дней</h5>
+                    <h5>Демо 14 дней</h5>
                     <div>
-                        <InfoIcon className={admin.SubscriptionInfo} style={{height: '18px', width: '18px'}}
-                                  onMouseOver={() => setMessageOn(true)}/>
-
+                        <InfoIcon className={admin.SubscriptionInfo} style={{height: '18px', width: '18px'}} onMouseOver={() => setMessageOn(true)}/>
                     </div>
                 </div>
                 <br/>
@@ -46,13 +42,13 @@ export default function AdminPanel() {
                     </div>
                     <Link to='/QrPage'>
                         <Button variant="contained" style={{
-                            margin: '10px',
+                            margin: '25px 10px 10px 10px',
                             borderRadius: '8px',
                             backgroundColor: 'rgb(103, 58, 183)'
                         }}>Сгенерировать QR</Button>
                     </Link>
                     <div className={admin.feedbacksList}>
-                        <h3 style={{margin: '20px'}}>Новые отзывы клиентов:</h3>
+                        <h3 style={{margin: '20px'}}>Отзывы:</h3>
                         <div className={admin.feedbacksListContent}>
                             <FeedbacksList comment={false} feedbacks={feedbacks.slice(0, 5)}/>
                         </div>
@@ -65,9 +61,10 @@ export default function AdminPanel() {
                 </div>
             </div>
             {
-                messageOn && (
+                messageOn &&
+                (<div style={{display:'flex', alignItems:'center' , justifyContent:'center' , position:'relative' ,bottom:'114px', left:'134px'}}>
                     <SmallSubsMessage setMessageOn={setMessageOn}/>
-                )
+                </div>)
             }
         </div>
     )

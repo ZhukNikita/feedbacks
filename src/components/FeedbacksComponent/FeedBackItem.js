@@ -22,12 +22,15 @@ export default function FeedBackItem({feedback, comment}) {
         <li className={css.item} key={feedback.id}>
             <div className={css.content}>
                 <div className={css.ratingStatus}>
-                    <Rating
-                        style={{margin: '10px 0 20px 0'}}
-                        readOnly={true}
-                        name="simple-controlled"
-                        value={feedback.rate}
-                    />
+                    <div style={{display:'flex' , minWidth:'200px' , maxWidth:'350px' , alignItems:'center' , justifyContent:'space-between'}}>
+                        <h2>{feedback.UserName}</h2>
+                        <Rating
+                            readOnly={true}
+                            name="simple-controlled"
+                            value={feedback.rate}
+                        />
+                    </div>
+
                     <div className={css.status}
                          style={
                              feedback.status == 'Активный' ? {
@@ -48,7 +51,6 @@ export default function FeedBackItem({feedback, comment}) {
                     </div>
 
                 </div>
-                <h2>{feedback.UserName}</h2>
                 <h3 className={css.mainText}>{feedback.text}</h3>
                 <h3 className={css.date}>{feedback.date}</h3>
                 {

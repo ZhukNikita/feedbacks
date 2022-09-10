@@ -7,10 +7,13 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import React from "react";
 import bar from "../CssModules/NavBar.module.css";
 import {Link} from "react-router-dom";
+import Logo from "./Logo";
 
 export default function NavBar() {
     return (
         <div className={bar.NavBar}>
+            <div className={bar.Logo}><Logo/></div>
+
             <Link to='/AboutUs'>
                 <Button
                     startIcon={<EmojiPeopleIcon/>}
