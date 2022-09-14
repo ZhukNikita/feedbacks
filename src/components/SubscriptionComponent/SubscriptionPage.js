@@ -1,19 +1,15 @@
 import subs from './SubscriptionPage.module.css';
-import SubsTable from "./SubsTable";
 import React from "react";
-import {SubsBuyButton} from "../Buttons/SubsBuyButton";
 import NavBar from "../NavBar";
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
-import HelpIcon from "@mui/icons-material/Help";
 import Footer from "../Footer";
 
 export default function SubscriptionPage() {
     const style = {width: '14px', height: '14px', color: 'gray', marginRight: '5px'}
     return (
         <div className={subs.Page}>
-            <NavBar/>
+            <NavBar focusedPage={'/Subscription'}/>
             <div className={subs.body}>
                 <div className={subs.subsPlanItem}>
                     <h3 className={subs.subtitle}>Базовый</h3>
