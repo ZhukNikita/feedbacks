@@ -7,12 +7,17 @@ import {Link} from "react-router-dom";
 import TagFacesIcon from '@mui/icons-material/TagFaces';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import MoodBadIcon from '@mui/icons-material/MoodBad';
+import {feedbacks} from "../FeedbacksComponent/Feedback'sData";
 export default function Analytics() {
     const [period , setPeriod] = useState('день')
     let rating = 4.7
     function handleChange(e){
         setPeriod(e.target.value)
     }
+    const niceRate = feedbacks.filter(feedback => feedback.status === 'Позитивный')
+    const badRate = feedbacks.filter(feedback => feedback.status === 'Негативный')
+    const inProccess = feedbacks.filter(feedback => feedback.status === 'Не решенный')
+
     return(
         <div className={css.Page}>
             <NavBar/>
@@ -42,9 +47,13 @@ export default function Analytics() {
                     <h3 style={{color: 'red'}}>Было: 4.3, стало: 3.5 - ой-ой, нужно исправлять!</h3>
                     <MoodBadIcon/>
                 </div>
-                <Link to='/Feedbacks' style={{color:'red', fontSize:'16px'}}>Не решенные отзывы за этот период: {period}</Link>
-                <Link to='/Feedbacks' style={{color:'red' ,marginTop:'20px' , fontSize:'16px'}}>Негативные отзывы за этот период: {period}</Link>
-                <Link to='/Feedbacks' style={{color:'green' , marginTop:'20px', fontSize:'16px'}}>Позитивные отзывы за этот период: {period}</Link>
+                <Link to='/Feedbacks' style={{color:'red', fontSize:'16px'}}>Не решенные отзывы за этот период: {period}: {inProccess.length}</Link>
+                <Link to='/Feedbacks' style={{color:'red' ,marginTop:'20px' , fontSize:'16px'}}>Негативные отзывы за этот период: {period}: {badRate.length}</Link>
+                <Link to='/Feedbacks' style={{color:'green' , marginTop:'20px', fontSize:'16px'}}>Позитивные отзывы за этот период: {period} : {niceRate.length}</Link>
+                <h3 style={{marginTop:'30px'}}>Статистика по тегам</h3>
+                <Link to='/Feedbacks' style={{color:'green', fontSize:'16px',marginTop:'20px' , fontWeight:'bold'}}>Персонал 4.4</Link>
+                <Link to='/Feedbacks' style={{color:'red', fontSize:'16px',marginTop:'20px', fontWeight:'bold'}}>Заведение 3.2</Link>
+
             </div>
             <Footer/>
         </div>
