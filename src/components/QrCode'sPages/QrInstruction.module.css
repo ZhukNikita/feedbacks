@@ -21,3 +21,9 @@
     min-width: 700px;
     max-width: 80rem;
 }
+@media screen and (max-width: 500px){
+    .body{
+        min-width: 300px;
+        max-width: 350px;
+    }
+}
